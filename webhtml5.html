@@ -1,0 +1,100 @@
+<!--Hecho por Aaron Martinez, Nacho Pineda, Martin Stutzmann y Raquel Monleon-->
+
+
+<!--El meta charset sirve para ver bien los carácteres en nuestra web
+El link se utiliza para relacionar los archivos css, js y html.
+-->
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>BURGER KINGU !!! </title>
+<link rel="stylesheet" type="text/css" href="css/style_aaron.css">
+<script src="js/java.js"></script> 
+<style type="text/css">
+</style>
+</head>
+
+<body>
+
+
+<!--Img src sirve para meter imagenes en la página, en este caso lo utilizamos para poner nuestro Logo.
+los siguientes divs sirven para hacer columnas donde escribiremos nuestro ticket
+-->
+<header>
+<img src="images/logo.png">
+</header>
+
+<div id='main'>
+<aside><h1>Ticket</h1>
+<p id="limon">Total a pagar:</p>
+
+<div class="row">
+  <div class="column">
+    <h3>Cantidad</h3>
+<p id="quantitat"></p>
+  </div>
+<div class="row">
+  <div class="column">
+    <h3>Producto</h3>
+<p id="producte"></p>
+
+  </div>
+<div class="row">
+  <div class="column">
+    <h3>Precio</h3>
+
+<p id="preu_unitari"></p>
+  </div>
+<div class="row">
+  <div class="column">
+    <h3>Subtotal</h3>
+<p id="preu_final"></p>
+  </div>
+
+
+<!--Lo siguiente son los botones que llaman a las funciones del js. Los tres primeros contienen imágenes.
+-->
+<p id="total"></p>
+
+</aside>
+
+<div id='main2'>
+<article><h1>Lista de productos</h1>
+<button class="producto" onclick="posa_producte('Café',2)"><img src="images/cafe.png" width="71" height="51"></button>
+<button class="producto" onclick="posa_producte('Donut',3)"><img src="images/donut.png" width="71" height="51"></button>
+<button class="producto" onclick="posa_producte('Batido',1)"><img src="images/batido.jpg" width="71" height="51"></button>
+
+<br> <br>
+<p id="quant">0</p>
+<button id="7" onclick="cantidad(7)">7</button>
+<button id="8" onclick="cantidad(8)">8</button>
+<button id="9" onclick="cantidad(9)">9</button>
+<br> <br>
+<button id="4" onclick="cantidad(4)">4</button>
+<button id="5" onclick="cantidad(5)">5</button>
+<button id="6" onclick="cantidad(6)">6</button>
+<br> <br>
+<button id="1" onclick="cantidad(1)">1</button>
+<button id="2" onclick="cantidad(2)">2</button>
+<button id="3" onclick="cantidad(3)">3</button>
+<br> <br>
+<button id="borrar" onclick="borrado()"><--</button>
+<button id="0" onclick="cantidad(0)">0</button>
+<button id="10" onclick="recargar(10)">C</button>
+
+
+<br> <br>
+<button id="intro" onclick="posa_linea_ticket()">Intro</button>
+</article>
+
+<!--Lo siguiente, audio, sirve paras añadir musica de fondo a nuestra página web.
+-->
+
+<footer></footer>
+</div>
+</div>
+<audio id="lima" autoplay loop hidden="true">
+<source src="musica.mp3">
+</body>
+</html>

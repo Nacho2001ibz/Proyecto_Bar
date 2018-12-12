@@ -1,0 +1,94 @@
+ /*Hecho por Aaron Martinez, Nacho Pineda, Martin Stutzmann y Raquel Monleon*/
+
+
+ /*En este caso se modifica el body y el html con los parametros indicados (tamaño,posición...)
+ */
+body, html {
+height: 100%;
+width: 100%;
+margin: 0px;
+padding: 0px;
+}
+
+/*En este caso se modifica la clase main (tamaño,posición...)
+*/
+#main {
+height: 80%;
+display: -webkit-flex;
+display: flex;
+flex-flow: row;
+}
+
+/*Aqui modificamos el article de la clase main y sobrescribimos la clase con estos valores.
+*/
+#main article {
+text-align: center;
+margin: 0px;
+border: 5px solid black;
+background: #CFC;
+height: 87%;
+}
+
+/*Aqui modificamos el header y el nav a la vez ya que contienen los mismos valores en la página
+*/
+header, nav {
+background-image: url(../images/burger.png);
+display: block;
+margin: 0px;
+border: 5px solid black;
+min-height: 20%;
+text-align: center;
+}
+
+/*Aquí le cambiamos el fondo al nav para diferenciarlo del header ya que son iguales
+*/
+nav {
+background: #6F6;
+}
+
+/*Aqui modificamos el aside de la clase main y sobrescribimos la clase con estos valores.
+*/
+#main aside {
+text-align: center;
+background: #CCF;
+margin: 0px;
+border: 5px solid black;
+flex: 1 6 33%;
+order: 2;
+}
+
+/*Aqui le hemos puesto una imagen de fondo a la pagina y le hemos puesto bordes para separar las secciones (aside,nav...)
+*/
+#main #main2 {
+background-image: url(../images/burger.png);
+margin: 10px;
+border: 5px solid black;
+flex: 1 6 67%;
+order: 1;
+}
+
+/*En este punto hemos modificado el aspecto de los botones
+*/
+
+button {
+    background-color: black;
+    border: dotted;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+/*En este punto asignamos las medidas de las columnas.
+*/
+
+.column {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    height: 300px; 
+}
