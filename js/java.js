@@ -59,4 +59,4 @@ document.getElementById("limon").innerHTML="Total a pagar: " + total +"€";
 function calcula_total(preu,cant){
 	return preu*cant;
 }
-
+//HOLA HOLITA HOLAA
